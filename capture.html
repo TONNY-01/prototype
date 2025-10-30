@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crop Check — SmartFarm Kenya</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="brand">
+        <div class="logo-mark">SF</div>
+        <div>
+          <h1>Crop Check</h1>
+          <p class="tag">Capture photos for disease & pest review</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="capture.html" class="active">Crop Check</a>
+        <a href="planner.html">Planner</a>
+        <a href="soil.html">Soil & Seasons</a>
+        <a href="market.html">Marketplace</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content-grid">
+    <section class="panel wide">
+      <h2>Quick Capture</h2>
+      <p class="muted">Use your phone camera to take one close-up and one contextual photo. This static form collects the images for later review.</p>
+
+      <form class="form" action="#" method="post" enctype="multipart/form-data">
+        <label for="crop">Crop</label>
+        <select id="crop" name="crop" required>
+          <option value="">Select crop</option>
+          <option>Maize</option>
+          <option>Tomato</option>
+          <option>Potato</option>
+          <option>Onion</option>
+          <option>Tea</option>
+          <option>Other</option>
+        </select>
+
+        <label for="photo_close">Photo — Close up</label>
+        <input id="photo_close" name="photo_close" type="file" accept="image/*" capture="environment" />
+
+        <label for="photo_context">Photo — Whole plant / context</label>
+        <input id="photo_context" name="photo_context" type="file" accept="image/*" capture="environment" />
+
+        <label for="location">Location (county / village)</label>
+        <input id="location" name="location" type="text" placeholder="e.g., Nakuru County" />
+
+        <label for="observ">Observations</label>
+        <textarea id="observ" name="observ" rows="4" placeholder="Describe symptoms: spots, wilting, insects, smell..."></textarea>
+
+        <div class="form-row">
+          <button class="btn primary" type="submit">Submit for Review</button>
+          <a class="btn" href="index.html">Cancel</a>
+        </div>
+
+        <p class="help">Tip: good lighting and a close-up of the affected area help diagnosis. This is a static prototype — submissions are stored only if connected to a backend.</p>
+      </form>
+    </section>
+
+    <aside class="panel side">
+      <h3>What we'll check</h3>
+      <ul>
+        <li>Fungal or bacterial lesions</li>
+        <li>Insect damage and pests</li>
+        <li>Postharvest rot or spoilage signs</li>
+        <li>Nutrient deficiency patterns</li>
+      </ul>
+
+      <h3>Quick actions</h3>
+      <ol>
+        <li>Isolate affected plants</li>
+        <li>Remove heavily infected material</li>
+        <li>Record and consult extension agents if severe</li>
+      </ol>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div>SmartFarm Kenya — Crop Check</div>
+      <div class="footer-links"><a href="index.html">Home</a></div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Soil & Seasons — SmartFarm Kenya</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="brand">
+        <div class="logo-mark">SF</div>
+        <div>
+          <h1>Soil Analysis & Seasons</h1>
+          <p class="tag">Record simple soil metrics and check planting windows</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="capture.html">Crop Check</a>
+        <a href="planner.html">Planner</a>
+        <a href="soil.html" class="active">Soil & Seasons</a>
+        <a href="market.html">Marketplace</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content-grid">
+    <section class="panel wide">
+      <h2>Record soil test results</h2>
+      <p class="muted">Enter pH, organic matter and texture — guidance below adjusts to common thresholds.</p>
+
+      <form class="form" action="#" method="post">
+        <label for="ph">Soil pH</label>
+        <input id="ph" name="ph" type="number" step="0.1" min="3" max="10" />
+
+        <label for="om">Organic matter (%)</label>
+        <input id="om" name="om" type="number" step="0.1" min="0" max="100" />
+
+        <label for="texture">Soil texture</label>
+        <select id="texture" name="texture">
+          <option>Loam</option>
+          <option>Clay</option>
+          <option>Sandy</option>
+          <option>Laterite</option>
+        </select>
+
+        <div class="form-row">
+          <button class="btn primary" type="submit">Save Soil Data</button>
+          <a class="btn" href="index.html">Cancel</a>
+        </div>
+      </form>
+
+      <div class="seasons">
+        <h3>Kenya planting windows</h3>
+        <ul>
+          <li><strong>Long rains (Mar–May)</strong> — main season for highlands</li>
+          <li><strong>Short rains (Oct–Dec)</strong> — window for quick-maturing crops</li>
+          <li><strong>Irrigated lowlands</strong> — year-round vegetables with irrigation</li>
+        </ul>
+      </div>
+    </section>
+
+    <aside class="panel side">
+      <h3>Soil advice (general)</h3>
+      <ul>
+        <li>pH &lt; 5.5: consider liming for many crops</li>
+        <li>Organic matter &lt; 2%: add compost and green manures</li>
+        <li>Sandy soils: increase organic matter to improve water retention</li>
+      </ul>
+
+      <h3>Bio-friendly amendments</h3>
+      <p class="muted">Compost, well-rotted manure, rock phosphate and green manures give long-term soil resilience and steady returns.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div>SmartFarm Kenya — Soil & Seasons</div>
+      <div class="footer-links"><a href="index.html">Home</a></div>
+    </div>
+  </footer>
+</body>
+</html>

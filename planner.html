@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Planner — SmartFarm Kenya</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="brand">
+        <div class="logo-mark">SF</div>
+        <div>
+          <h1>Cost & Profit Planner</h1>
+          <p class="tag">Quick estimations to support financial decisions</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="capture.html">Crop Check</a>
+        <a href="planner.html" class="active">Planner</a>
+        <a href="soil.html">Soil & Seasons</a>
+        <a href="market.html">Marketplace</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content-grid">
+    <section class="panel wide">
+      <h2>Estimate inputs, income and time</h2>
+      <p class="muted">This static form collects inputs. Use the formula box for manual calculations or export to print.</p>
+
+      <form class="form" action="#" method="post">
+        <label for="cropname">Crop</label>
+        <input id="cropname" name="cropname" type="text" placeholder="e.g., Maize (hybrid)" />
+
+        <label for="area">Area (acres)</label>
+        <input id="area" name="area" type="number" step="0.01" placeholder="e.g., 1.0" />
+
+        <label for="seed">Seed cost (KSh)</label>
+        <input id="seed" name="seed" type="number" step="0.01" />
+
+        <label for="fert">Fertilizer & manure (KSh)</label>
+        <input id="fert" name="fert" type="number" step="0.01" />
+
+        <label for="lab">Labor & transport (KSh)</label>
+        <input id="lab" name="lab" type="number" step="0.01" />
+
+        <label for="yieldkg">Expected yield (kg)</label>
+        <input id="yieldkg" name="yieldkg" type="number" step="0.1" />
+
+        <label for="pricekg">Expected price (KSh/kg)</label>
+        <input id="pricekg" name="pricekg" type="number" step="0.01" />
+
+        <label for="weeks">Time to harvest (weeks)</label>
+        <input id="weeks" name="weeks" type="number" step="1" />
+
+        <div class="form-row">
+          <button class="btn primary" type="submit">Save Estimate</button>
+          <a class="btn" href="index.html">Cancel</a>
+        </div>
+
+        <div class="note-box">
+          <strong>Manual calculation</strong>
+          <p>Income = yield × price. Profit = Income − (seed + fertilizer + labour). Use these numbers to compare crops and seasons for quicker financial decisions.</p>
+        </div>
+      </form>
+    </section>
+
+    <aside class="panel side">
+      <h3>Planning tips</h3>
+      <ul>
+        <li>Use preset templates for common crops to save time</li>
+        <li>Prefer bio-friendly inputs where ROI is similar to reduce long-term costs</li>
+        <li>Factor in time-to-harvest when comparing markets and prices</li>
+      </ul>
+
+      <h3>Example</h3>
+      <p class="muted">If yield = 2000 kg and price = 30 KSh/kg, Income = 60,000 KSh. If total costs = 20,000 KSh, Profit = 40,000 KSh.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div>SmartFarm Kenya — Planner</div>
+      <div class="footer-links"><a href="index.html">Home</a></div>
+    </div>
+  </footer>
+</body>
+</html>

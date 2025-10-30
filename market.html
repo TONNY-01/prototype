@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marketplace — SmartFarm Kenya</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="brand">
+        <div class="logo-mark">SF</div>
+        <div>
+          <h1>Marketplace</h1>
+          <p class="tag">Link producers, suppliers and buyers</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="capture.html">Crop Check</a>
+        <a href="planner.html">Planner</a>
+        <a href="soil.html">Soil & Seasons</a>
+        <a href="market.html" class="active">Marketplace</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content-grid">
+    <section class="panel wide">
+      <h2>Publish a listing</h2>
+      <p class="muted">Simple listing for producers, buyers and suppliers. A local coordinator can keep listings current.</p>
+
+      <form class="form" action="#" method="post">
+        <label for="role">I am a</label>
+        <select id="role" name="role">
+          <option>Producer</option>
+          <option>Supplier</option>
+          <option>Buyer</option>
+          <option>Extension Agent</option>
+        </select>
+
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" />
+
+        <label for="contact">Phone / WhatsApp</label>
+        <input id="contact" name="contact" type="tel" />
+
+        <label for="items">Products / Services (brief)</label>
+        <textarea id="items" name="items" rows="3" placeholder="What you sell or want to buy"></textarea>
+
+        <label for="qty">Available quantity / need (kg)</label>
+        <input id="qty" name="qty" type="text" />
+
+        <div class="form-row">
+          <button class="btn primary" type="submit">Publish Listing</button>
+          <a class="btn" href="index.html">Cancel</a>
+        </div>
+      </form>
+    </section>
+
+    <aside class="panel side">
+      <h3>Marketplace tips</h3>
+      <ul>
+        <li>Include harvest date and collection logistics</li>
+        <li>State preferred payment method (MPesa, bank, cash)</li>
+        <li>Use local coordinator to verify and update listings weekly</li>
+      </ul>
+
+      <h3>Encourage bio-friendly</h3>
+      <p class="muted">Highlight suppliers of compost, quality manure and biofertilizers to promote sustainable practices and market premiums.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div>SmartFarm Kenya — Marketplace</div>
+      <div class="footer-links"><a href="index.html">Home</a></div>
+    </div>
+  </footer>
+</body>
+</html>
